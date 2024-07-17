@@ -1,5 +1,5 @@
 .container-grid-forms {
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin: 20px 5px 20px 5px;
@@ -13,6 +13,7 @@
 .form form {
     width: auto;
 }
+
 label {
     font-family: "Platypi", serif;
     font-weight: 400;
@@ -26,13 +27,17 @@ fieldset {
     border: 2px solid #00be03;
     border-radius: 20px;
 }
+
 legend {
     font-family: "Platypi", serif;
     font-weight: 700;
     font-size: 20px;
 }
 
-.form form fieldset input, textarea, .form form fieldset select, .form form fieldset select option {
+.form form fieldset input,
+textarea,
+.form form fieldset select,
+.form form fieldset select option {
     font-family: "Roboto", serif;
     font-weight: 700;
     font-size: 15px;
@@ -52,7 +57,7 @@ legend {
     font-family: "Platypi", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 22px;  
+    font-size: 22px;
     padding: 5px 10px 5px 10px;
     margin-top: 20px;
     text-transform: uppercase;
@@ -63,7 +68,7 @@ legend {
 .form form fieldset input[type="submit"]:hover {
     background-color: #00be03;
     color: white;
-    transition: 0.3s ease-in-out ;
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -78,10 +83,11 @@ legend {
 }
 
 
-/* generos */ 
+/* generos */
 .genero-form {
     margin: 10px 0px 10px 0px;
 }
+
 .generos {
     display: flex;
     flex-direction: column;
@@ -97,12 +103,13 @@ legend {
 }
 
 
-/* partes junte-se */ 
+/* partes junte-se */
 
 .container-part-form {
     display: flex;
     justify-content: center;
 }
+
 .form-part {
     display: flex;
     flex-direction: column;
@@ -126,6 +133,7 @@ legend {
     display: flex;
     flex-direction: column;
 }
+
 .itens a {
     margin: 5px 0px 5px 0px;
     color: black;
@@ -134,12 +142,165 @@ legend {
     font-style: normal;
     font-size: 16px;
 }
+
 .itens a:hover {
     color: var(--destaque-cor);
 }
 
-/* contato */ 
+/* contato */
 .img-contato figure img {
     max-width: 320px;
     max-height: 320px;
+}
+
+
+@media (min-width: 700px) and (max-width:896px) {
+    .container-grid-forms {
+        grid-template-columns: 1fr;
+    }
+
+    .form-img {
+        margin: 20px 20px 0px 20px;
+    }
+    .form-img figure {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* contato */
+    .form-img figure img {
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .container-part-form {
+        flex-direction: column;
+    }
+
+    .form-part {
+        max-width: 100%;
+        width: 100%;
+        padding: 5px;
+    }
+
+
+    label {
+        font-size: 14px;
+    }
+    
+    legend {
+        font-size: 18px;
+    }
+    
+    .form form fieldset input,
+    textarea,
+    .form form fieldset select,
+    .form form fieldset select option {
+        font-size: 13px;
+        padding: 15px;
+    }
+    
+    
+    /* submit */
+    
+    .form form fieldset input[type="submit"] {
+        font-size: 20px;
+    }
+    
+    
+    .generos .genero {
+        font-size: 11px;
+    }
+    
+    /* visita */
+    
+    .title h2 {
+        color: black;
+        margin-bottom: 10px;
+    }
+    
+    .itens a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 360px) and (max-width:700px) {
+    .container-grid-forms {
+        grid-template-columns: 1fr;
+    }
+
+    .form-img {
+        margin: 20px 20px 0px 20px;
+    }
+    .form-img {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    #menu-escondido img {
+        display: block;
+        margin-right: 20px;
+    }
+    #header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .form-img figure img {
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .container-part-form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .form-part {
+        max-width: 100%;
+        width: 100%;
+        padding: 5px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+    
+    legend {
+        font-size: 16px;
+    }
+    
+    .form form fieldset input,
+    textarea,
+    .form form fieldset select,
+    .form form fieldset select option {
+        font-size: 11px;
+        padding: 12px;
+    }
+    
+    
+    /* submit */
+    
+    .form form fieldset input[type="submit"] {
+        font-size: 17px;
+    }
+    
+    
+    .generos .genero {
+        font-size: 11px;
+    }
+    
+    /* visita */
+    
+    .title h2 {
+        color: black;
+        margin-bottom: 10px;
+    }
+    
+    .itens a {
+        font-size: 12px;
+    }
 }
