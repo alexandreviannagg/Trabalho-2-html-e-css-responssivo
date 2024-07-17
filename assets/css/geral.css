@@ -1,0 +1,229 @@
+/* VARIAVEIS 
+border-bottom: var(--geral-cor) var(--borda-style) var(--borda-px)
+
+*/
+
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+:root {
+    --destaque-cor: #00be03;
+}
+
+/* TITULOS */
+
+
+.title-section {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: start;
+    color: black;
+    font-style: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.title-section-style-dois {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: var(--destaque-cor);
+    font-style: normal;
+    cursor: pointer;
+}
+
+
+.esterilizacaoh2 {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: start;
+    color: black;
+    font-style: normal;
+    padding: 5px;
+    border-bottom: var(--destaque-cor) 2px solid;
+    display: inline-block;
+}
+
+
+
+/* PARAGRAFOS */
+
+.text-paragrafo-section {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 10px;
+    color: black;
+    text-indent: 25px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+/* TEXTO DESTACADO */
+
+.text-destaque {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--destaque-cor);
+    display: inline-block;
+    align-items: center;
+    font-style: normal;
+}
+
+
+/* BOTÕES */
+
+.button a {
+    background-color: var(--destaque-cor);
+    border: white solid 2px;
+    border-radius: 20px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: white;
+}
+
+.button-invertido a {
+    border: var(--destaque-cor) solid 2px;
+    color: var(--destaque-cor);
+    background-color: white;
+}
+
+
+/* EFEITO PARA MENU */
+a {
+    position: relative;
+    text-decoration: none;
+}
+
+.efeito-borda::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: var(--destaque-cor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.efeito-borda:hover::after {
+    width: 100%;
+}
+
+/* EFEITO PARA TITULOS */
+.efeito-borda--title::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: var(--destaque-cor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.efeito-borda--title:hover::after {
+    width: 10%;
+}
+
+/* EFEITO BOTÃO */
+
+.button a:hover {
+    background-color: white;
+    border: solid 2px var(--destaque-cor);
+    color: var(--destaque-cor);
+    transition: 0.3s ease-in-out;
+}
+
+.button-invertido a:hover {
+    background-color: var(--destaque-cor);
+    border: solid 2px white;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+/* ESTILIZAÇÃO LISTAS */
+
+.style-list {
+    text-align: start;
+}
+
+.style-list li {
+    margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+.style-list li strong {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.style-list li strong {
+    color: var(--destaque-cor);
+}
+
+
+
+@media (max-width:850px) {
+
+
+    .title-section {
+        font-size: 28px;
+    }
+
+    .title-section-style-dois {
+        font-size: 20px;
+    }
+
+
+    .esterilizacaoh2 {
+        font-size: 16px;
+    }
+
+    /* PARAGRAFOS */
+
+    .text-paragrafo-section {
+        font-size: 12px;
+    }
+
+    /* BOTÕES */
+
+    .button a {
+        font-size: 15px;
+    }
+
+    .style-list li {
+        font-size: 12px;
+    }
+    
+    .style-list li strong { 
+        font-size: 13px;
+    }
+}

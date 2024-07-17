@@ -1,0 +1,469 @@
+/* HEADER */
+
+#header {
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+.container-header-invertido {
+    display: flex;
+    height: auto;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+}
+
+
+.logo {
+    margin: 20px;
+}
+
+.logo img {
+    max-width: 60px;
+    max-height: 50px;
+    cursor: pointer;
+}
+
+nav {
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+nav a {
+    margin-left: 15px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 15px;
+    font-style: normal;
+    color: black;
+    text-transform: uppercase;
+}
+
+.container-header-invertido nav a {
+    color: white;
+}
+
+
+
+
+
+/* QUEM SOMOS */
+
+#quem-somos {
+    background-image: url(../img/banners/cat_banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+.container-quem--somos {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.455);
+}
+
+.img-logo--verde,
+.text-quem--somos {
+    flex: 1;
+    display: flex;
+}
+
+.img-logo--verde {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.text-quem--somos {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-quem--somos p,
+.text-quem--somos h1 {
+    color: white;
+}
+
+
+/* ADOTAR */
+
+.container-content-adotar {
+    display: flex;
+    flex-direction: column;
+}
+
+.adotar-area-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-adotar figure a img {
+    max-width: 100%;
+    height: 550px;
+    display: block;
+}
+
+.text-adotar {
+    padding: 10px 10px 0px 10px;
+    height: 500px;
+}
+
+
+/* BICHINHOS PARA ADOTAR */
+
+
+#bichinhos {
+    background-image: url(../img/banners/pet-pata-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-bichinhos {
+    background-color: rgba(0, 0, 0, 0.67);
+}
+
+.bichinhos-para-adotar {
+    display: flex;
+}
+
+.title--text-bichinhos {
+    padding: 20px 15px 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title--text-bichinhos .title-section {
+    color: white;
+}
+
+.adotar-dog,
+.adotar-cat {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+}
+
+
+.img-dog figure img,
+.img-cat figure img {
+    width: 400px;
+    height: 290px;
+    border-radius: 50%;
+    border: 2px solid var(--destaque-cor);
+}
+
+
+/* SERVICOS */
+
+
+.grid-container--servicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.title--text-servicos {
+    padding: 20px 15px 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicos {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+
+.area-servicos figure a img {
+    max-width: 600px;
+    width: 600px;
+    max-height: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: var(--destaque-cor) 2px solid;
+}
+
+.area-servicos figcaption p {
+    max-width: 600px;
+    font-size: 13px;
+}
+
+
+/* DOAÇÕES */
+
+#doacoes {
+    background-image: url(../img/banners/doacoes-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+.container-doacoes {
+    background-color: rgba(0, 0, 0, 0.67);
+}
+
+.container-content--doacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.container-content--doacoes div {
+    padding-bottom: 20px;
+}
+
+.title--text-doacao {
+    padding: 20px 15px 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title--text-doacao h1 {
+    color: white;
+}
+
+.descricao-text--doacoes h2,
+.descricao-text--doacoes p,
+.lista-doacao,
+.lista-doacao h2 {
+    color: white;
+    padding-left: 10px;
+}
+
+
+.img-doacao,
+.img-doacao figure figcaption {
+    display: flex;
+    justify-content: center;
+}
+
+.img-doacao figure a img {
+    max-width: 400px;
+    max-height: 290px;
+    border: var(--destaque-cor) 2px solid;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* FOOTER */
+
+.container-footer {
+    background-color: black;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+}
+
+.titles--footer h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.itens-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.itens-footer a {
+    margin: 5px 0px 5px 0px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.itens-footer a:hover {
+    color: var(--destaque-cor);
+}
+
+.redesocial-content {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.icon-rede img {
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 5px;
+}
+
+
+
+/* ANIMAIS */
+
+.container-animais .grid-container--animais {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+
+.animais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+#animais .container-animais .title--text {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.area-animais figure a img {
+    max-width: 400px;
+    width: 400px;
+    max-height: 290px;
+    height: 290px;
+    object-fit: cover;
+    border: var(--destaque-cor) 2px solid;
+    border-radius: 20px;
+}
+
+.nome-animal {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: start;
+    color: black;
+    font-style: normal;
+    position: relative;
+    margin: 5px 0px 10px 5px;
+    border-left: var(--destaque-cor) 2px solid;
+    padding-left: 5px;
+}
+
+.genero-animal {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin-top: 3px;
+    padding-left: 15px;
+    color: rgb(82, 82, 82);
+    max-width: 270px;
+}
+
+.descricao-animal p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 12px;
+    color: black;
+    text-indent: 25px;
+    text-align: justify;
+    max-width: 270px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+
+
+
+
+
+
+@media (max-width:850px) {
+    .logo img {
+        width: 50px;
+        height: 40px;
+        cursor: pointer;
+    }
+    nav {
+        width: 100%;
+    }
+    nav a {
+        font-size: 10px;
+    }
+
+    .area-servicos figure a img {
+        width: 400px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .area-servicos figcaption p {
+        width: 400px;
+        font-size: 11px;
+    }
+
+    .img-dog figure img,
+    .img-cat figure img {
+        width: 300px;
+        height: 190px;
+        border-radius: 50%;
+        border: 2px solid var(--destaque-cor);
+    }
+
+
+    .itens-footer a {
+        font-size: 12px;
+    }
+
+    .itens-footer a:hover {
+        color: var(--destaque-cor);
+    }
+
+
+    .icon-rede img {
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+}
