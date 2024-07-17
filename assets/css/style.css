@@ -39,7 +39,6 @@ nav {
 nav a {
     margin-left: 15px;
     font-family: "Platypi", serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-size: 15px;
     font-style: normal;
@@ -357,7 +356,6 @@ nav a {
 
 .nome-animal {
     font-family: "Platypi", serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-size: 18px;
     text-align: start;
